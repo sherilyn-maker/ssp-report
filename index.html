@@ -116,6 +116,7 @@ tr:hover td{background:#eff6ff}
   <button class="tab-btn" onclick="showTab('siteaudit',event)">🔎 Site Audit</button>
   <button class="tab-btn" onclick="showTab('aisearch',event)">🤖 AI Search</button>
   <button class="tab-btn" onclick="showTab('callrail',event)">📞 CallRail</button>
+  <button class="tab-btn" onclick="showTab('analytics',event)">📈 Analytics &amp; GSC</button>
   <button class="tab-btn" onclick="showTab('blogcal',event)">📅 Content Calendar</button>
 </div>
 <!-- ═══ EXECUTIVE SUMMARY ═══ -->
@@ -610,6 +611,173 @@ tr:hover td{background:#eff6ff}
   </div>
 </div>
 <!-- ═══ CONTENT CALENDAR ═══ -->
+<div id="analytics" class="tab-pane">
+  <h2 class="section-title">Analytics &amp; Search Console</h2>
+  <div class="note-box"><strong>Data range:</strong> April 10 – July 8, 2026 (90 days) &nbsp;·&nbsp; <strong>GA4 Property:</strong> 461290826 &nbsp;·&nbsp; <strong>Source:</strong> Google Analytics Data API (live pull)</div>
+
+  <!-- Top KPIs -->
+  <div class="kpi-row">
+    <div class="kpi-card kpi-blue"><div class="kpi-label">Total Users</div><div class="kpi-value">11,355</div><div class="kpi-sub">90-day period</div></div>
+    <div class="kpi-card"><div class="kpi-label">Sessions</div><div class="kpi-value">11,479</div><div class="kpi-sub">All channels combined</div></div>
+    <div class="kpi-card"><div class="kpi-label">Page Views</div><div class="kpi-value">13,845</div><div class="kpi-sub">1.2 pages/session avg</div></div>
+    <div class="kpi-card kpi-red"><div class="kpi-label">Bounce Rate</div><div class="kpi-value">83.3%</div><div class="kpi-sub">⚠ High — needs attention</div></div>
+    <div class="kpi-card kpi-orange"><div class="kpi-label">Engagement Rate</div><div class="kpi-value">16.7%</div><div class="kpi-sub">Industry target: 40%+</div></div>
+    <div class="kpi-card kpi-green"><div class="kpi-label">Avg Session Duration</div><div class="kpi-value">47.7s</div><div class="kpi-sub">~48 seconds per visit</div></div>
+    <div class="kpi-card kpi-blue"><div class="kpi-label">Total Conversions</div><div class="kpi-value">487</div><div class="kpi-sub">All channels · 90 days</div></div>
+    <div class="kpi-card"><div class="kpi-label">New Users</div><div class="kpi-value">10,052</div><div class="kpi-sub">88.5% of total users</div></div>
+  </div>
+
+  <!-- Alerts -->
+  <div class="note-box" style="background:#fff1f2;border-color:#fca5a5"><strong style="color:#991b1b">⚠ High Bounce Rate Alert:</strong> 83.3% bounce rate means 8 in 10 visitors leave without engaging. This is above the 60–70% typical for plumbing sites and is suppressing conversion rates across all paid channels. Priority fix: improve landing page relevance, speed, and CTA visibility — especially on the two high-traffic paid pages (RO System ID, Leak Detection TX).</div>
+  <div class="note-box" style="background:#f0fdf4;border-color:#86efac"><strong style="color:#166534">✅ Organic &amp; GBP both converting:</strong> Google organic converts at 3.3% and GBP/Maps at ~1.4% — both are healthy channels that reward continued SEO investment. ChatGPT.com already sending referral traffic (11 sessions, 2 conversions) — early AI search signal.</div>
+
+  <!-- Traffic by Channel -->
+  <div class="two-col" style="margin-bottom:20px">
+    <div class="box box-dark">
+      <h3>Traffic by Channel — Sessions</h3>
+      <div class="chart-bar-h"><div class="bar-label">Paid Other (Angi)</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:#3b82f6">4,594</div></div><div class="bar-val">40.0%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Direct</div><div class="bar-track"><div class="bar-fill" style="width:61%;background:#22c55e">2,809</div></div><div class="bar-val">24.5%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Paid Search (Google)</div><div class="bar-track"><div class="bar-fill" style="width:54%;background:#f59e0b">2,477</div></div><div class="bar-val">21.6%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Organic Search</div><div class="bar-track"><div class="bar-fill" style="width:20%;background:#34d399">919</div></div><div class="bar-val">8.0%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">GBP / Maps</div><div class="bar-track"><div class="bar-fill" style="width:6%;background:#60a5fa">287</div></div><div class="bar-val">2.5%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Paid Social (FB)</div><div class="bar-track"><div class="bar-fill" style="width:6%;background:#f87171">256</div></div><div class="bar-val">2.2%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Other / Referral</div><div class="bar-track"><div class="bar-fill" style="width:3%;background:#a78bfa">137</div></div><div class="bar-val">1.2%</div></div>
+    </div>
+    <div class="box box-dark">
+      <h3>Conversions by Channel</h3>
+      <div class="chart-bar-h"><div class="bar-label">Direct</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:#22c55e">206</div></div><div class="bar-val">42.3%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Paid Search (Google)</div><div class="bar-track"><div class="bar-fill" style="width:59%;background:#f59e0b">122</div></div><div class="bar-val">25.1%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Paid Other (Angi)</div><div class="bar-track"><div class="bar-fill" style="width:43%;background:#3b82f6">89</div></div><div class="bar-val">18.3%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Unassigned</div><div class="bar-track"><div class="bar-fill" style="width:13%;background:#94a3b8">27</div></div><div class="bar-val">5.5%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Organic Search</div><div class="bar-track"><div class="bar-fill" style="width:15%;background:#34d399">30</div></div><div class="bar-val">6.2%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">Cross-network</div><div class="bar-track"><div class="bar-fill" style="width:4%;background:#a78bfa">9</div></div><div class="bar-val">1.8%</div></div>
+      <div class="chart-bar-h"><div class="bar-label">GBP / Maps</div><div class="bar-track"><div class="bar-fill" style="width:2%;background:#60a5fa">4</div></div><div class="bar-val">0.8%</div></div>
+    </div>
+  </div>
+
+  <!-- Channel Details Table -->
+  <div class="table-wrap" style="margin-bottom:20px">
+    <h3 style="font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:12px">Channel Performance Detail</h3>
+    <table>
+      <thead><tr><th>Channel</th><th>Sessions</th><th>Users</th><th>Conversions</th><th>Conv Rate</th><th>Engagement Rate</th><th>Assessment</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Paid Other (Angi)</strong></td><td>4,594</td><td>4,102</td><td>89</td><td>1.9%</td><td>14.1%</td><td><span class="tag tag-yellow">Review ROI — low engagement</span></td></tr>
+        <tr><td><strong>Direct</strong></td><td>2,809</td><td>2,634</td><td>206</td><td>7.3%</td><td>22.7%</td><td><span class="tag tag-green">Highest CVR — strong brand recall</span></td></tr>
+        <tr><td><strong>Paid Search (Google)</strong></td><td>2,477</td><td>2,150</td><td>122</td><td>4.9%</td><td>14.8%</td><td><span class="tag tag-yellow">Good CVR — improve landing pages</span></td></tr>
+        <tr><td><strong>Organic Search</strong></td><td>919</td><td>798</td><td>30</td><td>3.3%</td><td>21.2%</td><td><span class="tag tag-green">Healthy — grow with SEO content</span></td></tr>
+        <tr><td><strong>GBP / Maps</strong></td><td>287</td><td>274</td><td>4</td><td>1.4%</td><td>24.6%</td><td><span class="tag tag-blue">Highest engagement — optimize GBP</span></td></tr>
+        <tr><td><strong>Paid Social (FB)</strong></td><td>256</td><td>256</td><td>1</td><td>0.4%</td><td>5.1%</td><td><span class="tag tag-red">Very low CVR — review targeting</span></td></tr>
+        <tr><td><strong>Organic Social</strong></td><td>114</td><td>109</td><td>0</td><td>0.0%</td><td>9.6%</td><td><span class="tag tag-orange">Zero conversions — add CTA posts</span></td></tr>
+        <tr><td><strong>Referral</strong></td><td>70</td><td>26</td><td>3</td><td>4.3%</td><td>37.1%</td><td><span class="tag tag-green">Good quality — build more referrals</span></td></tr>
+        <tr><td><strong>ChatGPT.com</strong></td><td>11</td><td>2</td><td>2</td><td>18.2%</td><td>72.7%</td><td><span class="tag tag-blue">🤖 AI search — early signal, monitor</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Top Pages + Devices -->
+  <div class="two-col">
+    <div>
+      <h3 style="font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:12px">Top Pages by Views (90 days)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Page</th><th>Views</th><th>Users</th><th>Avg Duration</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Homepage</strong> <span class="tag tag-blue">/</span></td><td>4,105</td><td>3,510</td><td>31s</td></tr>
+            <tr><td><strong>Free RO System (ID)</strong> <span class="tag tag-green">paid LP</span></td><td>2,546</td><td>2,087</td><td>30s</td></tr>
+            <tr><td><strong>Leak Detection TX</strong> <span class="tag tag-yellow">paid LP</span></td><td>2,282</td><td>1,927</td><td>39s</td></tr>
+            <tr><td><strong>Contact Us</strong></td><td>787</td><td>681</td><td>34s</td></tr>
+            <tr><td><strong>Plumbing Services</strong></td><td>503</td><td>404</td><td>47s</td></tr>
+            <tr><td><strong>Water Softener &amp; Filtration</strong></td><td>425</td><td>331</td><td>31s</td></tr>
+            <tr><td><strong>Idaho Location Page</strong></td><td>260</td><td>244</td><td>32s</td></tr>
+            <tr><td><strong>Texas Location Page</strong></td><td>189</td><td>183</td><td>44s</td></tr>
+            <tr><td><strong>Tennessee / Knoxville</strong></td><td>143</td><td>99</td><td>76s</td></tr>
+            <tr><td><strong>Thank You (Conversion)</strong></td><td>137</td><td>134</td><td>13s</td></tr>
+            <tr><td><strong>About Us</strong></td><td>124</td><td>87</td><td>89s</td></tr>
+            <tr><td><strong>Coupons</strong></td><td>119</td><td>94</td><td>81s</td></tr>
+            <tr><td><strong>Blog</strong></td><td>74</td><td>43</td><td>91s</td></tr>
+            <tr><td><strong>Tennessee (State)</strong></td><td>54</td><td>19</td><td>270s ⭐</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:12px">Device Breakdown</h3>
+      <div class="box box-dark" style="margin-bottom:16px">
+        <div class="chart-bar-h"><div class="bar-label" style="color:rgba(255,255,255,.8)">Mobile</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:#3b82f6">7,961</div></div><div class="bar-val" style="color:#e2e8f0">69.4%</div></div>
+        <div class="chart-bar-h"><div class="bar-label" style="color:rgba(255,255,255,.8)">Desktop</div><div class="bar-track"><div class="bar-fill" style="width:38%;background:#22c55e">3,023</div></div><div class="bar-val" style="color:#e2e8f0">26.3%</div></div>
+        <div class="chart-bar-h"><div class="bar-label" style="color:rgba(255,255,255,.8)">Tablet</div><div class="bar-track"><div class="bar-fill" style="width:5%;background:#f59e0b">396</div></div><div class="bar-val" style="color:#e2e8f0">3.5%</div></div>
+        <p style="margin-top:14px;color:rgba(255,255,255,.75);font-size:12px">69% of traffic is mobile. Mobile engagement rate (16.6%) is nearly identical to desktop (16.6%) — the site isn't mobile-penalizing but landing page CTA visibility on small screens should be tested.</p>
+      </div>
+      <h3 style="font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:12px">Organic Search — Source Breakdown</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Search Engine</th><th>Sessions</th><th>Conv.</th></tr></thead>
+          <tbody>
+            <tr><td>Google Organic</td><td>505</td><td>25</td></tr>
+            <tr><td>Bing Organic</td><td>76</td><td>0</td></tr>
+            <tr><td>DuckDuckGo</td><td>26</td><td>0</td></tr>
+            <tr><td>Yahoo</td><td>12</td><td>1</td></tr>
+            <tr><td>AVG (browser)</td><td>8</td><td>0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Insights -->
+  <h3 style="font-size:14px;font-weight:700;color:#1e3a5f;margin:8px 0 12px">Key Insights &amp; Recommended Actions</h3>
+  <div class="three-col">
+    <div class="box box-red">
+      <h3>🔴 Angi Spend Audit Needed</h3>
+      <p style="font-size:13px;color:#374151">Angi ("an / paid") drives the most sessions (4,594) but has the <strong>lowest engagement rate of all paid channels (14.1%)</strong> and just 89 conversions — a 1.9% CVR vs. 4.9% for Google Ads. Calculate cost-per-conversion for Angi vs Google Ads to determine if the budget split is optimal. Angi leads may also be lower intent than self-initiated searches.</p>
+    </div>
+    <div class="box box-orange">
+      <h3>🟠 Landing Page Bounce Fix</h3>
+      <p style="font-size:13px;color:#374151">The two paid landing pages (/free-reverse-osmosis-system-id/ and /leak-detection-special-tx/) together account for <strong>4,828 views</strong> but average only 30–39 seconds on page with a presumed high bounce rate. A/B test: (1) faster load time, (2) phone number above fold, (3) trust signals (reviews, license, guarantee) in first scroll. Each second of improvement can lift CVR 5–10%.</p>
+    </div>
+    <div class="box box-green">
+      <h3>🟢 Double Down on Organic &amp; GBP</h3>
+      <p style="font-size:13px;color:#374151">GBP/Maps has the <strong>highest engagement rate (24.6%)</strong> of all channels. Organic search has a healthy 3.3% CVR. These are the two lowest-cost, highest-quality channels. Publishing 2–3 blog posts/month and optimizing GBP weekly (posts, photos, Q&amp;A) will compound traffic over the next 6–12 months.</p>
+    </div>
+    <div class="box box-red">
+      <h3>🔴 Facebook Paid Almost Zero ROI</h3>
+      <p style="font-size:13px;color:#374151">Paid Social (Facebook) delivered 256 sessions and just <strong>1 conversion in 90 days</strong> — a 0.4% CVR and 5.1% engagement rate, the lowest of any channel. Either pause Facebook Ads entirely and reallocate to Google Ads, or overhaul the audience targeting and creative before next spend cycle.</p>
+    </div>
+    <div class="box box-yellow">
+      <h3>🟡 Tennessee Page Hidden Gem</h3>
+      <p style="font-size:13px;color:#374151">The Tennessee state page has <strong>270 seconds average session duration</strong> — by far the longest of any page on the site (next highest is Blog at 91s). Users landing there are highly engaged. This page needs more content, clear CTAs, and should be a priority for local SEO investment in the Knoxville market.</p>
+    </div>
+    <div class="box box-blue">
+      <h3>🔵 AI Search Already Arriving</h3>
+      <p style="font-size:13px;color:#374151">ChatGPT.com sent 11 referral sessions with <strong>2 conversions (18.2% CVR)</strong> — the highest conversion rate of any traffic source. This confirms users finding SSP through AI tools are highly qualified. Adding FAQ schema, structured data, and direct-answer blog content will accelerate this channel as AI search grows.</p>
+    </div>
+  </div>
+
+  <!-- GSC Section -->
+  <h2 class="section-title" style="margin-top:16px">Google Search Console</h2>
+  <div class="note-box" style="background:#fff7ed;border-color:#fdba74">
+    <strong style="color:#9a3412">🔐 GSC Access Pending:</strong> The service account (<code>gsc-mcp@ambient-polymer-491706-k3.iam.gserviceaccount.com</code>) needs to be added in Google Search Console → Settings → Users and Permissions for straightshooterplumbing.com with <strong>Full</strong> access. Once added, this section will populate with live keyword rankings, impressions, clicks, CTR, and average position data.
+  </div>
+  <div class="three-col">
+    <div class="box" style="text-align:center;padding:32px">
+      <div style="font-size:2rem;margin-bottom:8px">🔍</div>
+      <div style="font-size:14px;font-weight:700;color:#64748b">Top Keywords</div>
+      <div style="font-size:12px;color:#94a3b8;margin-top:6px">Awaiting GSC access — will show clicks, impressions, CTR, position by keyword</div>
+    </div>
+    <div class="box" style="text-align:center;padding:32px">
+      <div style="font-size:2rem;margin-bottom:8px">📄</div>
+      <div style="font-size:14px;font-weight:700;color:#64748b">Top Pages (Organic)</div>
+      <div style="font-size:12px;color:#94a3b8;margin-top:6px">Awaiting GSC access — will show which pages rank and drive organic clicks</div>
+    </div>
+    <div class="box" style="text-align:center;padding:32px">
+      <div style="font-size:2rem;margin-bottom:8px">📈</div>
+      <div style="font-size:14px;font-weight:700;color:#94a3b8">Impressions &amp; CTR</div>
+      <div style="font-size:12px;color:#94a3b8;margin-top:6px">Awaiting GSC access — will show search visibility trend and click-through rates</div>
+    </div>
+  </div>
+  <div class="note-box"><strong>To connect GSC:</strong> Go to <strong>search.google.com/search-console</strong> → select straightshooterplumbing.com → Settings → Users and permissions → Add user → paste <code>gsc-mcp@ambient-polymer-491706-k3.iam.gserviceaccount.com</code> → Permission: Full → Save. The data will auto-populate on next report refresh.</div>
+</div>
+
 <div id="blogcal" class="tab-pane">
   <h2 class="section-title">Content Calendar — 12 Months · Blog + Social + Reels</h2>
   <div class="note-box"><strong>Strategy:</strong> 3 blog posts/month + 2 static social posts/week (8–9/month) + 2 reels/month = ~47 content pieces per month across all platforms. Every blog post needs BlogPosting + FAQPage or HowTo schema. Every reel should have a CTA to call or book online.</div>
